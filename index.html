@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style/app.css" />
+
+  <title>APIpelis</title>
+</head>
+<body>
+  <header id="header" class="header-container">
+    <span class="header-arrow inactive">&lt;</span>
+    <h1 class="header-title">API-pelis
+      <img src="https://cdn-icons-png.flaticon.com/512/864/864818.png?w=740&t=st=1685231773~exp=1685232373~hmac=ce5d49948e5812f67f556b66c34b9034493997a0502ce67060acf2ef854a9607"
+      alt="Icono palomitas y refresco">
+    </h1>
+    <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+
+    <form id="searchForm" class="header-searchForm">
+      <input type="text" placeholder="Vengadores..." />
+      <button id="searchBtn"><img 
+        src="https://cdn-icons-png.flaticon.com/512/85/85825.png?w=740&t=st=1685229338~exp=1685229938~hmac=1b922c6ebcc39e3cb78871a643f2e5c814abafec7805131568ba3272dca15b16" 
+        alt="Icono de lupa" ></button>
+    </form>
+  </header>
+
+  <section id="trendingPreview" class="trendingPreview-container">
+    <div class="trendingPreview-header">
+      <h2 class="trendingPreview-title">Tendencias</h2>
+      <button class="trendingPreview-btn">Ver más</button>
+    </div>
+
+    <article class="trendingPreview-movieList">
+    </article>
+  </section>
+
+  <section id="categoriesPreview" class="categoriesPreview-container">
+    <h2 class="categoriesPreview-title">Categorías</h2>
+
+    <div class="adorno"></div>
+    <div class="adorno2"></div>
+
+    <article class="categoriesPreview-list">
+      <!-- <div class="category-container">
+        <h3 id="id28" class="category-title">Romance</h3>
+      </div>  --> 
+    </article> 
+  </section>
+
+  <section id="genericList" class="genericList-container inactive">
+    <div class="movie-container">
+      <img
+        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+        class="movie-img"
+        alt="Nombre de la película"
+      />
+    </div>
+
+    <div class="movie-container">
+      <img
+        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+        class="movie-img"
+        alt="Nombre de la película"
+      />
+    </div>
+
+    <div class="movie-container">
+      <img
+        src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+        class="movie-img"
+        alt="Nombre de la película"
+      />
+    </div>
+  </section>
+
+  <section id="movieDetail" class="movieDetail-container inactive">
+    <h1 class="movieDetail-title">Deadpool</h1>
+    <span class="movieDetail-score">7.6</span>
+    <p class="movieDetail-description">
+      Wisecracking mercenary Deadpool battles the evil and powerful Cable and other bad guys to save a boy's life.
+    </p>
+
+    <article class="categories-list">
+      <div class="category-container">
+        <h3 id="id28" class="category-title">Romance</h3>
+      </div>
+
+      <div class="category-container">
+        <h3 id="id16" class="category-title">Drama</h3>
+      </div>
+
+      <div class="category-container">
+        <h3 id="id14" class="category-title">Acción</h3>
+      </div>
+    </article>
+
+    <article id="relatedMovies-container">
+      <h2 class="relatedMovies-title">Películas similares</h2>
+
+      <div id="relatedMovies-scrollContainer">
+        <div class="movie-container">
+          <img
+            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+            class="movie-img"
+            alt="Nombre de la película"
+          />
+        </div>
+        
+        <div class="movie-container">
+          <img
+            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+            class="movie-img"
+            alt="Nombre de la película"
+          />
+        </div>
+        
+        <div class="movie-container">
+          <img
+            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+            class="movie-img"
+            alt="Nombre de la película"
+          />
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>Hecho con amor en Platzi por haok</footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="./src/secrets.js"></script>
+  <script src="./src/nodes.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./src/navigation.js"></script>
+</body>
+</html>
